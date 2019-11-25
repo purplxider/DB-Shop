@@ -5,7 +5,7 @@ create table User_Info (
     birth           date               not null,
     gender          char(1)            not null,
     user_rank       varchar(6)         not null,
-    address1        varchar(15)        not null,
+    address1        varchar(30)        not null,
     address2        varchar(50)        not null,
     primary key(user_id)
 );
@@ -20,7 +20,7 @@ create table User_Phone (
 create table Brand (
     brand_id        char(4)           not null,
     brand_name      varchar(10)        not null,
-    address1        varchar(15)        not null,
+    address1        varchar(30)        not null,
     address2        varchar(50)        not null,
     primary key(brand_id)
 );
@@ -56,7 +56,7 @@ create table Stock (
 create table Order_Info (
     order_id        char(8)          not null,
     receiver_name   varchar(10)      not null,
-    address1        varchar(15)      not null,
+    address1        varchar(30)      not null,
     address2        varchar(50)      not null,
     total_price     numeric          not null,
     order_date      date             not null,
